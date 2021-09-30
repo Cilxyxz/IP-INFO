@@ -25,19 +25,24 @@ def ipinfo():
        data = response.read()
        values = json.loads(data)
        os.system("clear")
-                                                                              
+ print(''\033[91m     
+  ____  ____  _____ __  __ ___ _   _ __  __ 
+ |  _ \|  _ \| ____|  \/  |_ _| | | |  \/  |
+ | |_) | |_) |  _| | |\/| || || | | | |\/| |
+ |  __/|  _ <| |___| |  | || || |_| | |  | |
+ |_|   |_| \_\_____|_|  |_|___|\___/|_|  |_|')                                                                
        slowprint("\033[31m ════════════════════════════════════════════════════════")
-       slowprint("\033[31m" + "\n IP          : \033[1;32m " + values['query'])
-       slowprint("\033[31m" + " Status      : \033[1;32m " + values['status'])
-       slowprint("\033[31m" + " Region      : \033[1;32m " + values['regionName'])
-       slowprint("\033[31m" + " Country     : \033[1;32m " + values['country'])
-       slowprint("\033[31m" + " Date & Time : \033[1;32m " + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-       slowprint("\033[31m" + " City        : \033[1;32m " + values['city'])
-       slowprint("\033[31m" + " ISP         : \033[1;32m " + values['isp'])
-       slowprint("\033[31m" + " Lat,Lon     : \033[1;32m " + str(values['lat']) + "," + str(values['lon']))
-       slowprint("\033[31m" + " ZIPCODE     : \033[1;32m " + values['zip'])
-       slowprint("\033[31m" + " TimeZone    : \033[1;32m " + values['timezone'])
-       slowprint("\033[31m" + " AS          : \033[1;32m " + values['as'] + "\n")
+       slowprint("\033[31m" + "\n IP          : \033[31m " + values['query'])
+       slowprint("\033[31m" + " Status      : \033[31m " + values['status'])
+       slowprint("\033[31m" + " Region      : \033[31m " + values['regionName'])
+       slowprint("\033[31m" + " Country     : \033[31m " + values['country'])
+       slowprint("\033[31m" + " Date & Time : \033[31m " + datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+       slowprint("\033[31m" + " City        : \033[31m " + values['city'])
+       slowprint("\033[31m" + " ISP         : \033[31m " + values['isp'])
+       slowprint("\033[31m" + " Lat,Lon     : \033[31m " + str(values['lat']) + "," + str(values['lon']))
+       slowprint("\033[31m" + " ZIPCODE     : \033[31m " + values['zip'])
+       slowprint("\033[31m" + " TimeZone    : \033[31m " + values['timezone'])
+       slowprint("\033[31m" + " AS          : \033[31m " + values['as'] + "\n")
        slowprint("\033[31m ════════════════════════════════════════════════════════")
        print (" ")
        slowprint("\033[31m ══════════════════════════════════════")
@@ -46,7 +51,7 @@ def ipinfo():
        print (" ")
        slowprint("\033[1;91mPress\033[1;36m ENTER\033[1;91m To Continue")
        print (" ")
-       vpp = input("\033[1;33m[+] IPInformation >>\033[1;32m")
+       vpp = input("\033[31m[+] IPInformation >>\033[31m")
        if vpp == " ":
                 os.system("clear")
                 return main()
@@ -59,7 +64,6 @@ def ipinfo():
 def about():
        os.system("clear")
        print ("\033[1;32m\007\n")
-       os.system("figlet IP-Info | lolcat")
        time.sleep(2)
        slowprint ("\033[31m ════════════════════════════════════════════════════════")
        slowprint ("\033[31m" + "         [+] Tool Name     =>\033[0;205" + " IP-Info")
