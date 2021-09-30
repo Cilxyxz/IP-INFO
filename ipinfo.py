@@ -24,13 +24,12 @@ def ipinfo():
        response = urllib.request.urlopen(url + ip)
        data = response.read()
        values = json.loads(data)
-       os.system("clear")
- print(''\033[91m     
+       os.system("clear")     
   ____  ____  _____ __  __ ___ _   _ __  __ 
  |  _ \|  _ \| ____|  \/  |_ _| | | |  \/  |
  | |_) | |_) |  _| | |\/| || || | | | |\/| |
  |  __/|  _ <| |___| |  | || || |_| | |  | |
- |_|   |_| \_\_____|_|  |_|___|\___/|_|  |_|')                                                                
+ |_|   |_| \_\_____|_|  |_|___|\___/|_|  |_|                                                               
        slowprint("\033[31m ════════════════════════════════════════════════════════")
        slowprint("\033[31m" + "\n IP          : \033[31m " + values['query'])
        slowprint("\033[31m" + " Status      : \033[31m " + values['status'])
