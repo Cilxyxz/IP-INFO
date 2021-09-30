@@ -28,7 +28,7 @@ def ipinfo():
 
        print ("\033[1;32m\007\n")
        os.system("figlet IP-Info | lolcat")
-       slowprint("\033[1;36m =====================================")
+       slowprint("\033[31m' =====================================")
        slowprint("\033[1;33m|            IP Information           |")
        slowprint("\033[1;36m =====================================")
        slowprint("\033[0;205m" + "\n IP          : \033[1;32m " + values['query'])
