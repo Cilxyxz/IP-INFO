@@ -31,7 +31,7 @@ def ipinfo():
        slowprint("\033[1;36m =====================================")
        slowprint("\033[1;33m|            IP Information           |")
        slowprint("\033[1;36m =====================================")
-       slowprint("\033[0;205" + "\n IP          : \033[1;32m " + values['query'])
+       slowprint("\033[0;205m" + "\n IP          : \033[1;32m " + values['query'])
        slowprint("\033[1;36m" + " Status      : \033[1;32m " + values['status'])
        slowprint("\033[1;36m" + " Region      : \033[1;32m " + values['regionName'])
        slowprint("\033[1;36m" + " Country     : \033[1;32m " + values['country'])
