@@ -38,7 +38,7 @@ def ipinfo():
        slowprint("\033[31m" + " ZIPCODE     : \033[1;32m " + values['zip'])
        slowprint("\033[31m" + " TimeZone    : \033[1;32m " + values['timezone'])
        slowprint("\033[31m" + " AS          : \033[1;32m " + values['as'] + "\n")
-       slowprint("\033[31m ════════════════════════════════════════════════════════
+       slowprint("\033[31m ════════════════════════════════════════════════════════")
        print (" ")
        slowprint("\033[31m ══════════════════════════════════════")
        slowprint("\033[31m         Coded By Pwnicated            ")
